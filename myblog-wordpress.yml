@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: myblog-wordpress
-          image: wordpress:5.2
+          image: wordpress
           ports:
             - containerPort: 80
           volumeMounts:
