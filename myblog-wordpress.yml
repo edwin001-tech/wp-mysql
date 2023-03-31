@@ -38,11 +38,13 @@ spec:
           env:
             - name: WORDPRESS_DB_HOST
               value: myblog-db-service
+            - name: WORDPRESS_DB_USER
+              value: site1_user
             - name: WORDPRESS_DB_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: myblog-secrets
-                  key: ROOT_PASSWORD
+                  key: SITE1_USER_PASSWORD
       volumes:
         - name: wordpress-disk
           persistentVolumeClaim:
