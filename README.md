@@ -13,5 +13,5 @@ Steps to deploy the services:
 
 ## Alternatively, you can use the script `deploy.sh` to deploy the resources
 Steps:
-1. `chmod +x script.sh`
+1. `chmod +x deploy.sh`
 2. run `./deploy.sh`
